@@ -1,0 +1,171 @@
+# Translations template for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-02-02 15:36+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: app.py:92
+msgid "Login Success"
+msgstr ""
+
+#: app.py:95
+msgid "Username or Password Incorrect"
+msgstr ""
+
+#: app.py:99 app.py:161 app.py:169 app.py:260
+msgid "Connection Error"
+msgstr ""
+
+#: app.py:102 app.py:105
+msgid "Please input correct details"
+msgstr ""
+
+#: app.py:126
+msgid "Username has been used"
+msgstr ""
+
+#: app.py:136
+msgid "Email has been used"
+msgstr ""
+
+#: app.py:145
+msgid "Phone has been used"
+msgstr ""
+
+#: app.py:156
+msgid "Success, you may login now!"
+msgstr ""
+
+#: app.py:165 app.py:295
+msgid "Retype password incorrect"
+msgstr ""
+
+#: app.py:206 templates/forgotpw.html:10 templates/login.html:20
+msgid "Forgot Password"
+msgstr ""
+
+#: app.py:250
+msgid "Connection Error to Email server"
+msgstr ""
+
+#: app.py:253
+msgid "Email Incorrect"
+msgstr ""
+
+#: app.py:256
+msgid "Username Incorrect"
+msgstr ""
+
+#: app.py:273
+msgid "Verification code incorrect"
+msgstr ""
+
+#: app.py:292
+msgid "Success to change password"
+msgstr ""
+
+#: templates/base.html:37
+msgid "Logout"
+msgstr ""
+
+#: templates/base.html:39 templates/login.html:10 templates/login.html:23
+msgid "Login"
+msgstr ""
+
+#: templates/changepwR.html:10
+msgid "Reset Password"
+msgstr ""
+
+#: templates/changepwR.html:13 templates/forgotpw.html:13
+#: templates/login.html:13 templates/register.html:30 templates/resetpw.html:13
+msgid "Username"
+msgstr ""
+
+#: templates/changepwR.html:14 templates/forgotpw.html:16
+#: templates/register.html:33 templates/resetpw.html:14
+msgid "Email"
+msgstr ""
+
+#: templates/changepwR.html:16
+msgid "Please a new password"
+msgstr ""
+
+#: templates/changepwR.html:19
+msgid "Re-type new password"
+msgstr ""
+
+#: templates/changepwR.html:22 templates/forgotpw.html:23
+#: templates/resetpw.html:23
+msgid "Continue"
+msgstr ""
+
+#: templates/forgotpw.html:20
+msgid "Forgot Email or Email cannot use"
+msgstr ""
+
+#: templates/index.html:61
+msgid "Please select shop"
+msgstr ""
+
+#: templates/login.html:16 templates/register.html:56
+msgid "Password"
+msgstr ""
+
+#: templates/login.html:27 templates/register.html:15
+#: templates/register.html:66
+msgid "Register"
+msgstr ""
+
+#: templates/register.html:8
+msgid "The Verification code is : 12345"
+msgstr ""
+
+#: templates/register.html:39
+msgid "Phone"
+msgstr ""
+
+#: templates/register.html:43
+msgid "Space"
+msgstr ""
+
+#: templates/register.html:44
+msgid "Get Code"
+msgstr ""
+
+#: templates/register.html:47
+msgid "Verification code"
+msgstr ""
+
+#: templates/register.html:59
+msgid "Retype-Password"
+msgstr ""
+
+#: templates/register.html:63
+msgid "Already have account? Login Now!"
+msgstr ""
+
+#: templates/resetpw.html:10
+msgid "Verification code checking"
+msgstr ""
+
+#: templates/resetpw.html:16
+msgid "Please input the Verification code"
+msgstr ""
+
+#: templates/resetpw.html:20
+msgid "Resend Verification Email"
+msgstr ""
+

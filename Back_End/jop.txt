@@ -1,0 +1,14 @@
+JLabel w2 = new JLabel(rb.getString("w_sA"));
+w2.setFont(myFont.f1);
+JOptionPane.showMessageDialog(
+	this,w2,rb.getString("w_s"),JOptionPane.INFORMATION_MESSAGE);
+
+JLabel w3 = new JLabel(rb.getString("w_wSelect"));
+w3.setFont(myFont.f1);
+JOptionPane.showMessageDialog(
+	this,w3,rb.getString("w_w"),JOptionPane.ERROR_MESSAGE);
+
+JLabel w2 = new JLabel(rb.getString("w_wInput"));
+w2.setFont(myFont.f1);
+JOptionPane.showMessageDialog(
+	this,w2,rb.getString("w_w"),JOptionPane.ERROR_MESSAGE);

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block head %}
+<!-- CSS -->
+<link rel="stylesheet" href="{{ url_for("static",filename="css/login.css")}}">
+<title>{{ _('Reset Password') }}</title>
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <h1>{{ _('Reset Password') }}</h1>
+    <div class="loginForm">
+        <form action="/changepwR", method="post">
+            <h4 class="toLeft">{{ _('Username') +' : '+ session['resetPWUsername'] }}</h4>
+            <h4 class="toLeft">{{ _('Email')  +' : '+ session['resetPWEmail'] }}</h4>
+            <br>
+            <h3 class="toLeft">{{ _('Please a new password') }}</h3>
+            <input type="password" name="password1" class="full" required><br>
+            <br>
+            <h3 class="toLeft">{{ _('Re-type new password') }}</h3>
+            <input type="password" name="password2" class="full" required><br>
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" >{{ _('Continue') }}</button>
+            <br><br>
+        </form>
+        <br>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        <span>{{ message }}</span>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <br>
+    </div>
+</div>
+{% endblock %}

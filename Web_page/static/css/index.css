@@ -1,0 +1,57 @@
+.start_container {
+    background-color: rgba(255, 255, 255, 0.904);
+    text-align: center;
+    width: 80%;
+    height: 600px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.select_shop{
+    padding-top: 5px;
+}
+
+.selecter{
+    width: 80%;
+}
+
+#map_canvas{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: auto;
+    height:75%;
+}
+
+.button_gp{
+    margin-top: 10px;
+}
+
+.news_container{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.wordBorder{
+    color:rgb(255, 255, 255);
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+.bannerStyle{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+}
+
+.carousel-item {
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+}

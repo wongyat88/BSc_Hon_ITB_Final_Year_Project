@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Different Title -->
+    {% block head %}
+    {% endblock %}
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/base.css")}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo/logo.ico') }}">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(255, 255, 255, 0.904);">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="{{ url_for("index") }}">
+            <img src="{{ url_for("static",filename="images/logo/navbar_logo.png")}}" alt="logo" style="width:215px;height: 50px;">
+        </a>
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                {% if session['userid'] %}
+                    <a class="navbar-brand" href="{{ url_for('userPage') }}">{{ session['username'] }}</a>
+                    <a class="navbar-brand" href="{{ url_for('logout') }}">{{ _('Logout') }}</a>
+                {% else %}
+                    <a class="navbar-brand" href="{{ url_for('login') }}">{{ _('Login') }}</a>
+                {% endif %}
+                <a class="navbar-brand" href="#" aria-disabled="true" ></a>
+                <a class="navbar-brand" href="{{ url_for('changeLang') }}">
+                    {% if session['language'] == 'eng' %}
+                        中
+                    {% else %}
+                        Eng
+                    {% endif %}
+                </a>
+                <a class="navbar-brand" href="#" aria-disabled="true" ></a>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Different Main Parts -->
+
+    {% block main %}
+
+    {% endblock %}
+
+    <!-- Footer -->
+    <div class="clear"></div>
+    <div class="footer">
+        <br>
+        Student ID : 55202288
+        |Contact Us
+        |Email
+        |©2019 All Rights Reserved
+    </div>
+
+</body>
+</html>

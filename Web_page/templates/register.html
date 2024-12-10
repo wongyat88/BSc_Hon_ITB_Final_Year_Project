@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>{{ _('Register') }}</title>
+<!-- CSS -->
+<link rel="stylesheet" href="{{ url_for("static",filename="css/login.css")}}">
+<script type="text/javascript">
+    function getCode() {
+      alert("{{ _('The Verification code is : 12345') }}");
+    }
+</script>
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <h1>{{ _('Register') }}</h1>
+    <div class="loginForm">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        <span>{{ message }}</span>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <form action="/register", method="post">
+            <h3 class="toLeft">{{ _('Username') }}</h3>
+            <input type="text" name="username" class="full" required><br>
+            <br>
+            <h3 class="toLeft">{{ _('Email') }}</h3>
+            <input type="text" name="email" class="full" required><br>
+            <br>
+
+            <div class="row" style="width: 100%;">
+                <div class="col-sm-4">
+                    <h3 style="float: left;">{{ _('Phone') }}</h3>
+                    <input type="tel" pattern="[0-9]{8}" name="phone" required style="width: 100%;float: left;">
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="disappear" >{{ _('Space') }}</h3>
+                    <button type="button" class="btn btn-success" style="float: left;" onclick="getCode()">{{ _('Get Code') }}</buttontype="button">
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="float: left;">{{ _('Verification code') }}</h3>
+                    <input type="tel" pattern="[0-9]{5}" name="code" style="width: 100%;float: left;" required>
+                </div>
+            </div>
+
+            <span style="float:right;width: 20%;">
+                
+            </span>    
+            <br>
+            <h3 class="toLeft">{{ _('Password') }}</h3>
+            <input type="password" name="password" class="full" required><br>
+            <br>
+            <h3 class="toLeft">{{ _('Retype-Password') }}</h3>
+            <input type="password" name="password2" class="full" required><br>
+            <br>
+            <div class="toLeft">
+                <a href="{{ url_for('forgotPw')}}">{{ _('Already have account? Login Now!') }}</a>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" >{{ _('Register') }}</button>
+            <br><br>
+        </form>
+        <br>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,181 @@
+# Chinese translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-02-02 15:36+0800\n"
+"PO-Revision-Date: 2020-02-02 15:53+0800\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Language: zh_HK\n"
+
+#: app.py:92
+msgid "Login Success"
+msgstr "登錄成功"
+
+#: app.py:95
+msgid "Username or Password Incorrect"
+msgstr "用戶名或密碼不正確"
+
+#: app.py:99 app.py:161 app.py:169 app.py:260
+msgid "Connection Error"
+msgstr "連接錯誤"
+
+#: app.py:102 app.py:105
+msgid "Please input correct details"
+msgstr "請輸入正確的詳細信息"
+
+#: app.py:126
+msgid "Username has been used"
+msgstr "用戶名已被使用"
+
+#: app.py:136
+msgid "Email has been used"
+msgstr "電子郵件已被使用"
+
+#: app.py:145
+msgid "Phone has been used"
+msgstr "手機已被使用"
+
+#: app.py:156
+msgid "Success, you may login now!"
+msgstr "你現在可以登入"
+
+#: app.py:165 app.py:295
+msgid "Retype password incorrect"
+msgstr "重新輸入密碼錯誤"
+
+#: app.py:206 templates/forgotpw.html:10 templates/login.html:20
+msgid "Forgot Password"
+msgstr "忘記密碼"
+
+#: app.py:250
+msgid "Connection Error to Email server"
+msgstr "連接錯誤"
+
+#: app.py:253
+msgid "Email Incorrect"
+msgstr "電郵地址錯誤"
+
+#: app.py:256
+msgid "Username Incorrect"
+msgstr "用戶名錯誤"
+
+#: app.py:273
+msgid "Verification code incorrect"
+msgstr "驗證碼錯誤"
+
+#: app.py:292
+msgid "Success to change password"
+msgstr "成功更改密碼"
+
+#: templates/base.html:37
+msgid "Logout"
+msgstr "登出"
+
+#: templates/base.html:39 templates/login.html:10 templates/login.html:23
+msgid "Login"
+msgstr "登入"
+
+#: templates/changepwR.html:10
+msgid "Reset Password"
+msgstr "重設密碼"
+
+#: templates/changepwR.html:13 templates/forgotpw.html:13
+#: templates/login.html:13 templates/register.html:30 templates/resetpw.html:13
+msgid "Username"
+msgstr "用戶名"
+
+#: templates/changepwR.html:14 templates/forgotpw.html:16
+#: templates/register.html:33 templates/resetpw.html:14
+msgid "Email"
+msgstr "電郵地址"
+
+#: templates/changepwR.html:16
+msgid "Please a new password"
+msgstr "請輸入新的密碼"
+
+#: templates/changepwR.html:19
+msgid "Re-type new password"
+msgstr "重新輸入密碼"
+
+#: templates/changepwR.html:22 templates/forgotpw.html:23
+#: templates/resetpw.html:23
+msgid "Continue"
+msgstr "繼續"
+
+#: templates/forgotpw.html:20
+msgid "Forgot Email or Email cannot use"
+msgstr "忘記電郵地址或電郵地址現時未能使用"
+
+#: templates/index.html:61
+msgid "Please select shop"
+msgstr "選擇店舖"
+
+#: templates/login.html:16 templates/register.html:56
+msgid "Password"
+msgstr "密碼"
+
+#: templates/login.html:27 templates/register.html:15
+#: templates/register.html:66
+msgid "Register"
+msgstr "註冊"
+
+#: templates/register.html:8
+msgid "The Verification code is : 12345"
+msgstr "驗證號碼為:12345"
+
+#: templates/register.html:39
+msgid "Phone"
+msgstr "電話號碼"
+
+#: templates/register.html:43
+msgid "Space"
+msgstr "Space"
+
+#: templates/register.html:44
+msgid "Get Code"
+msgstr "獲取驗證碼"
+
+#: templates/register.html:47
+msgid "Verification code"
+msgstr "驗證碼"
+
+#: templates/register.html:59
+msgid "Retype-Password"
+msgstr "重新輸入密碼"
+
+#: templates/register.html:63
+msgid "Already have account? Login Now!"
+msgstr "已擁有帳戶?立即登入!"
+
+#: templates/resetpw.html:10
+msgid "Verification code checking"
+msgstr "驗證碼驗證"
+
+#: templates/resetpw.html:16
+msgid "Please input the Verification code"
+msgstr "請輸入驗證碼"
+
+#: templates/resetpw.html:20
+msgid "Resend Verification Email"
+msgstr "重新發送驗證電郵"
+
+msgid "Welcome"
+msgstr "歡迎"
+
+msgid "Search for Products"
+msgstr "搜尋商品"
+
+msgid "Search"
+msgstr "搜尋"

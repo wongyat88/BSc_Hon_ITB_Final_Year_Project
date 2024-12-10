@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block head %}
+<!-- CSS -->
+<link rel="stylesheet" href="{{ url_for("static",filename="css/login.css")}}">
+<title>{{ _('Login') }}</title>
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <h1>{{ _('Login') }}</h1>
+    <div class="loginForm">
+        <form action="/login", method="post">
+            <h3 class="toLeft">{{ _('Username') }}</h3>
+            <input type="text" name="username" class="full" required><br>
+            <br>
+            <h3 class="toLeft">{{ _('Password') }}</h3>
+            <input type="password" name="password" class="full" required><br>
+            <br>
+            <div class="toLeft">
+                <a href="{{ url_for('forgotPw')}}">{{ _('Forgot Password') }}</a>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" >{{ _('Login') }}</button>
+            <br><br>
+        </form>
+        <form action="/register", method="get">
+            <button type="submit" class="btn btn-success" >{{ _('Register') }}</button>
+        </form>
+        <br>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        <span>{{ message }}</span>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <br>
+    </div>
+</div>
+
+
+{% endblock %}
