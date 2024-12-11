@@ -1,7 +1,7 @@
 ### BSc Hon ITB (2017~2020) Final Year Project
 ### POS for restaurant with backend management system
 
-Details can be found from the attached PDF report.
+[YouTube Demo Video](https://www.youtube.com/embed/ZIGWCNQ1jCc)
 
 ### Technology
 - Java (Swing)
